@@ -1,0 +1,7 @@
+{
+  "name": "Samonya Digital Universe",
+  "description": "A comprehensive digital ecosystem featuring AI music, kids content, secular entertainment, digital TV, and cinematic productions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
