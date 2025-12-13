@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password | Samonya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-reset">
+    <div class="container">
+        <div class="brand-header">
+            <div class="logo-text">SAMONYA</div>
+            <p>Account Recovery</p>
+        </div>
+
+        <div class="card">
+            <div id="alertBox" class="alert"></div>
+
+            <!-- Step 1: Check Email -->
+            <form id="checkEmailForm">
+                <p style="margin-bottom:20px; color:var(--text-muted);">Enter your email address to find your account.</p>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit" class="btn">Verify Email</button>
+                <div class="auth-links">
+                    <a href="login.html">Back to Login</a>
+                </div>
+            </form>
+
+            <!-- Step 2: New Password (Hidden initially) -->
+            <form id="resetPassForm" style="display:none;">
+                <p style="margin-bottom:20px; color:var(--text-muted);">Create a new strong password.</p>
+                <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" id="newPassword" required>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Update Password</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

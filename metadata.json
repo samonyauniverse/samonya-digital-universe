@@ -1,0 +1,8 @@
+{
+  "name": "SAMONYA DIGITAL UNIVERSE",
+  "description": "A multi-brand digital universe hosting AI music, films, kids content, news, and comedy.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

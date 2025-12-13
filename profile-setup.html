@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Profile | Samonya Digital Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-setup">
+    <div class="container medium">
+        <div class="brand-header">
+            <div class="logo-text">SAMONYA</div>
+            <div class="page-title">Identity Calibration</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Complete your profile to access the Universe.</p>
+        </div>
+
+        <div class="card">
+            <div id="alertBox" class="alert"></div>
+
+            <form id="setupForm">
+                
+                <!-- Section 1: Visual Identity -->
+                <div class="form-group" style="text-align:center; margin-bottom: 30px;">
+                    <div class="pfp-preview">
+                        <img id="pfpPreviewImg" src="https://via.placeholder.com/100/333/fff?text=UPLOAD" alt="Preview">
+                    </div>
+                    <label for="pfpInput" class="file-upload-label">Upload Profile Picture (Optional)</label>
+                    <input type="file" id="pfpInput" accept="image/*" style="display:none;">
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid var(--glass-border); margin-bottom: 25px;">
+
+                <!-- Section 2: Basic Info -->
+                <div class="form-group">
+                    <label>Username <span style="color:var(--accent)">*</span></label>
+                    <input type="text" id="username" placeholder="Choose a unique handle" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Full Name <span style="color:var(--accent)">*</span></label>
+                    <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 150px;">
+                        <label>Date of Birth <span style="color:var(--accent)">*</span></label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="form-group" style="flex: 1; min-width: 150px;">
+                        <label>Gender <span style="color:var(--accent)">*</span></label>
+                        <select id="gender" required>
+                            <option value="" disabled selected>Select...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Non-binary">Non-binary</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Country <span style="color:var(--accent)">*</span></label>
+                    <select id="country" required>
+                        <option value="" disabled selected>Select Country...</option>
+                        <option value="USA">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="India">India</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Other">Other (Universal Citizen)</option>
+                    </select>
+                </div>
+
+                <!-- Section 3: Persona -->
+                <div class="form-group">
+                    <label>Short Bio (50-200 characters) <span style="color:var(--accent)">*</span></label>
+                    <textarea id="bio" placeholder="Tell us about yourself..." maxlength="200" required></textarea>
+                    <div id="bioCount" class="char-count">0/200</div>
+                </div>
+
+                <!-- Section 4: Interface Preference -->
+                <div class="form-group">
+                    <label>Interface Theme <span style="color:var(--accent)">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="theme" value="dark" checked>
+                            Dark Cosmic
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="theme" value="light">
+                            Light Star
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" style="margin-top: 20px;">Launch Profile & Enter</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

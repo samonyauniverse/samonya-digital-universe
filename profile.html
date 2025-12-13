@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings | Samonya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-profile">
+    <div class="container">
+        <div class="card">
+            <div style="text-align:left; margin-bottom:20px;">
+                <a href="dashboard.html" style="color:var(--secondary); text-decoration:none; font-weight:bold;">← Back to Dashboard</a>
+            </div>
+
+            <h2 style="margin-bottom:20px;">Profile Settings</h2>
+            
+            <div id="alertBox" class="alert"></div>
+
+            <form id="profileForm">
+                <div class="form-group" style="text-align:center;">
+                    <div class="pfp-preview">
+                        <img id="pfpPreviewImg" src="" alt="Profile">
+                    </div>
+                    <label for="pfpInput" class="file-upload-label">Change Picture</label>
+                    <input type="file" id="pfpInput" accept="image/*" style="display:none;">
+                </div>
+
+                <div class="form-group">
+                    <label>Display Name</label>
+                    <input type="text" id="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Change Password (Optional)</label>
+                    <input type="password" id="newPassword" placeholder="New Password">
+                </div>
+
+                <!-- Theme Toggle -->
+                <div class="theme-switch-wrapper">
+                    <label style="margin:0;">Light Mode</label>
+                    <input type="checkbox" id="themeToggle" style="width:auto;">
+                </div>
+
+                <button type="submit" class="btn" style="margin-top:20px;">Save Changes</button>
+            </form>
+
+            <hr style="border:0; border-top:1px solid var(--glass-border); margin:30px 0;">
+
+            <h3 style="color:#ef4444; font-size:1rem;">Danger Zone</h3>
+            <button id="deleteBtn" class="btn btn-danger">Delete Account</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

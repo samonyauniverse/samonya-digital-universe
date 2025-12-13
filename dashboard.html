@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Samonya Digital Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-dashboard">
+    <div class="container wide">
+        <div class="brand-header">
+            <div class="logo-text">SAMONYA</div>
+            <div class="page-title">Digital Command Center</div>
+        </div>
+
+        <div class="card">
+            <div class="user-header">
+                <div class="pfp-preview" style="margin:0; width:80px; height:80px;">
+                    <img id="dashPfp" src="" alt="Profile">
+                </div>
+                <div class="user-info">
+                    <h2>Welcome, <span id="dashUsername">Explorer</span></h2>
+                    <p id="dashEmail">Loading...</p>
+                </div>
+            </div>
+
+            <h3 style="color: var(--text-muted); font-size: 0.9rem; text-transform:uppercase; letter-spacing:1px;">Your Applications</h3>
+            
+            <div class="dashboard-grid">
+                <a href="profile.html" class="brand-tile">
+                    <div class="brand-icon">⚙️</div>
+                    <div>Profile Settings</div>
+                </a>
+                <a href="#" class="brand-tile">
+                    <div class="brand-icon">👁️</div>
+                    <div>Dream Eye</div>
+                </a>
+                <a href="#" class="brand-tile">
+                    <div class="brand-icon">✨</div>
+                    <div>Universe Plus</div>
+                </a>
+                <a href="#" class="brand-tile">
+                    <div class="brand-icon">👨‍👩‍👧‍👦</div>
+                    <div>Cosmic Family</div>
+                </a>
+                <a href="#" class="brand-tile">
+                    <div class="brand-icon">🎫</div>
+                    <div>Galactic Pass</div>
+                </a>
+                <a href="#" class="brand-tile">
+                    <div class="brand-icon">📺</div>
+                    <div>Samonya TV</div>
+                </a>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <button id="logoutBtn" class="btn btn-outline">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
